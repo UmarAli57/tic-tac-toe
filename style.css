@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark--: rgb(29, 41, 61);
+    --white--: white;
+    --alice--: aliceblue;
+}
+body{
+    background-color: var(--alice--);
+    color: var(--dark--);
+}
+.dark{
+    background-color: var(--dark--);
+    color: var(--white--);
+}
+.mt-10{
+    margin-top: 60px;
+}
+.tic-tac{
+    font-size: 2.5rem;
+}
+.actions{
+    top: 0.5rem;
+    right: 0;
+}
+body .btn-slate{
+    background-color: var(--dark--);
+    color: var(--white--);
+    font-size: 0.9rem;
+}
+body .btn-slate:hover{
+    color: var(--white--);
+    background-color: rgba(29, 41, 61, 0.836);
+}
+body .btn-slate{
+    box-shadow: 0px 0px 1rem -0.84rem var(--white--);
+    background-color: rgb(32, 56, 96);
+    color: var(--white--);
+}
+body .btn-slate:hover{
+    color: var(--white--);
+    background-color: rgba(32, 55, 96, 0.642);
+}
+
+.game{
+    /* width: 35%; */
+    width: 380px;
+}
+.game .box{
+    width: 30%;
+    aspect-ratio: 1/0.9;
+    border-radius: 1rem;
+    font-size: 3.5rem;
+    padding-bottom: 0.4rem;
+    text-transform: uppercase;
+}
+body .game .box{
+    background-color: rgb(193, 224, 250);
+    color: var(--dark--);
+}
+.dark .game .box{
+    background-color: rgb(156, 189, 216);
+}
+.reset{
+    margin-left: 280px !important;
+}
+.win{
+    color: #4a9970;
+}
+.lose{
+    color: #d6a2ad;
+}

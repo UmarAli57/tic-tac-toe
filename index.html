@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="icon" href="img/tic-tac.jpg">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+    <div class="container">
+        <div class="head mt-3 position-relative">
+            <h3 class="tic-tac text-center fw-bold">
+                Tic Tac Toe Game
+            </h3>
+            <div class="actions position-absolute">
+                <button class="btn-sm btn btn-slate" id="newGame">New Game</button>
+                <button class="btn-sm btn btn-slate ms-1" id="mode">Dark Mode</button>
+            </div>
+        </div>
+        <div class="container mb-2 mt-10">
+            <div class="row">
+                <div class="col-3 d-flex justify-content-center align-items-center winner">
+                    <h3 class="fw-bold display-4 text-center text-capitalize win"></h3>
+                </div>
+                <div class="col-5 mx-auto">
+                    <div class="game row row-cols-4 justify-content-center gap-2 mx-auto">
+                        <button class="box border-0 col fw-bold"></button>
+                        <button class="box border-0 col fw-bold"></button>
+                        <button class="box border-0 col fw-bold"></button>
+                        <button class="box border-0 col fw-bold"></button>
+                        <button class="box border-0 col fw-bold"></button>
+                        <button class="box border-0 col fw-bold"></button>
+                        <button class="box border-0 col fw-bold"></button>
+                        <button class="box border-0 col fw-bold"></button>
+                        <button class="box border-0 col fw-bold"></button>
+                    </div>
+                    <div class="reset mx-auto text-center mt-4">
+                        <button class="btn btn-slate btn-sm px-3" id="resetBtn">Reset</button>
+                    </div>
+                </div>
+                <div class="col-3 d-flex justify-content-center align-items-center winner">
+                    <h3 class="fw-bold display-4 text-center text-capitalize lose"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
